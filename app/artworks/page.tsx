@@ -1,5 +1,3 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import Image from "next/image"
 
 export default function ArtworksPage() {
@@ -62,49 +60,45 @@ export default function ArtworksPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-[#faf6f1]">
-      <Navigation />
-      <main className="py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl font-serif text-center mb-8">Art Gallery</h1>
+    <div className="py-16 px-4">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-4xl font-serif text-center mb-8">Art Gallery</h1>
 
-          {/* Categories */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                className="px-6 py-2 rounded-full bg-white hover:bg-[#b39b7d] hover:text-white transition-colors"
-              >
-                {category.name}
-              </button>
-            ))}
-          </div>
-
-          {/* Artwork Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {artworks.map((artwork) => (
-              <div key={artwork.title} className="group">
-                <div className="relative aspect-square mb-4 overflow-hidden rounded-lg">
-                  <Image
-                    src="/placeholder.svg"
-                    alt={artwork.title}
-                    fill
-                    className="object-cover transition-transform group-hover:scale-105"
-                  />
-                </div>
-                <h3 className="text-xl font-serif mb-2">{artwork.title}</h3>
-                <p className="text-gray-600 mb-2">{artwork.description}</p>
-                <div className="text-sm text-gray-500">
-                  <p>Medium: {artwork.medium}</p>
-                  <p>Dimensions: {artwork.dimensions}</p>
-                  <p>Year: {artwork.year}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+        {/* Categories */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {categories.map((category) => (
+            <button
+              key={category.id}
+              className="px-6 py-2 rounded-full bg-white hover:bg-[#b39b7d] hover:text-white transition-colors"
+            >
+              {category.name}
+            </button>
+          ))}
         </div>
-      </main>
-      <Footer />
+
+        {/* Artwork Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {artworks.map((artwork) => (
+            <div key={artwork.title} className="group">
+              <div className="relative aspect-square mb-4 overflow-hidden rounded-lg">
+                <Image
+                  src="/placeholder.svg"
+                  alt={artwork.title}
+                  fill
+                  className="object-cover transition-transform group-hover:scale-105"
+                />
+              </div>
+              <h3 className="text-xl font-serif mb-2">{artwork.title}</h3>
+              <p className="text-gray-600 mb-2">{artwork.description}</p>
+              <div className="text-sm text-gray-500">
+                <p>Medium: {artwork.medium}</p>
+                <p>Dimensions: {artwork.dimensions}</p>
+                <p>Year: {artwork.year}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
