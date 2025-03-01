@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function ArtInLife() {
   return (
-    <section className="bg-[#e6ddd3] py-16 px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#e6ddd3] py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="max-w-xl">
           <h2 className="text-3xl font-serif mb-4">ART IN OUR LIFE</h2>

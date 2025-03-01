@@ -6,7 +6,7 @@ import { ArtWorks } from "@/components/art-works"
 
 export default function HomePage() {
   return (
-    <div className="space-y-16 py-16">
+    <div className="space-y">
       <Hero />
       <ArtInLife />
       <Services />

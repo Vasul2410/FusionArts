@@ -60,7 +60,8 @@
     "zod": "^3.24.1",
     "@fortawesome/fontawesome-svg-core": "latest",
     "@fortawesome/react-fontawesome": "latest",
-    "@fortawesome/free-brands-svg-icons": "latest"
+    "@fortawesome/free-brands-svg-icons": "latest",
+    "swiper": "latest"
   },
   "devDependencies": {
     "@types/node": "^22",

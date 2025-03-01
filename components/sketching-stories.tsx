@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function SketchingStories() {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#e6ddd3]">
+    <section className="py-12 px-4 sm:px-6 lg:px-8 bg-[#e6ddd3]">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-serif text-center mb-12">Sketching Stories on Every Wall</h2>
         <div className="bg-[#d8cfc2] p-8 rounded-lg">

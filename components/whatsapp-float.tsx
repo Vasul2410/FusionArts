@@ -20,7 +20,11 @@ export function WhatsAppFloat() {
   // Function to open WhatsApp chat
   const openWhatsAppChat = () => {
     // Replace '1234567890' with your actual WhatsApp number
-    window.open("https://wa.me/1234567890", "_blank")
+    const message = `Hello,
+
+I'm interested in a sketch that captures a cherished memory. Could you please share your process, pricing, and availability?`;
+    const encodedMessage = encodeURIComponent(message);
+    window.open(`https://wa.me/+917698541642?text=${encodedMessage}`, "_blank")
   }
 
   return (
