@@ -4,6 +4,10 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
+
+import logoM from "../public/FUSION-LOGO.png"
+
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,9 +24,15 @@ export function Navigation() {
           <div className="flex-shrink-0">
             <Link
               href="/"
-              className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition-colors duration-300"
+              className="flex items-center"
             >
-              ART IS HERE
+              <Image
+                src={logoM}// replace with your actual logo path
+                alt="Art Is Here Logo"
+                width={100}       // adjust as needed
+                height={100}      // adjust as needed
+                className="object-contain"
+              />
             </Link>
           </div>
 
