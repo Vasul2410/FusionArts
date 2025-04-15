@@ -6,6 +6,12 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay, EffectFade } from "swiper/modules"
 import { Button } from "@/components/ui/button"
 
+import homeS1 from "../public/home page/homes.jpg"
+import homeS2 from "../public/home page/art_pencil.jpg"
+import homeS3 from "../public/home page/main_home page.jpg"
+
+
+
 // Import Swiper styles
 import "swiper/css"
 import "swiper/css/effect-fade"
@@ -17,27 +23,27 @@ export function Hero() {
   const slides = [
     {
       id: 1,
-      src: "https://i.etsystatic.com/9073374/r/il/f63ded/3439932221/il_1140xN.3439932221_fccn.jpg",
+      src: homeS1,
       alt: "Colorful Balloons",
-      title: "Serious Slider",
+      title: "Walls That Speak, Art That Lives",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lorem felis, egestas in posuere ac, pellentesque et nisi. Etiam id aliquam nulla. Nunc id commodo erat, at aliquet enim. Maecenas ut tempus est.",
+        "Transform your hall into a gallery of emotions with aesthetic wall frame sketches. Adorn your space with timeless wedding portraits, heartfelt family sketches, and elegant minimalist art.",
     },
     {
       id: 2,
-      src: "https://i.etsystatic.com/9073374/r/il/d35b11/3392265234/il_1140xN.3392265234_lb9f.jpg",
+      src: homeS2,
       alt: "Colorful Balloons",
-      title: "Creative Design",
+      title: "Where Love Becomes Art",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lorem felis, egestas in posuere ac, pellentesque et nisi. Etiam id aliquam nulla. Nunc id commodo erat, at aliquet enim. Maecenas ut tempus est.",
+        `Every love story is unique, and so is every sketch. A wedding is not just a day but a lifetime of emotions, laughter, and cherished moments.`,
     },
     {
       id: 3,
-      src: "https://graphicprintcompany.co.uk/cdn/shop/products/Frame2_6d6fac79-5456-4967-9c2d-184376bfba86.jpg",
+      src: homeS3,
       alt: "Colorful Balloons",
-      title: "Modern Style",
+      title: "Turning Moments into Timeless sketch",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lorem felis, egestas in posuere ac, pellentesque et nisi. Etiam id aliquam nulla. Nunc id commodo erat, at aliquet enim. Maecenas ut tempus est.",
+        "Enhance your studio with artistic and aesthetic wall frame sketches. Display creative portraits, abstract line art, and inspirational quote sketches to set an inspiring atmosphere.",
     },
   ]
 
@@ -61,16 +67,16 @@ export function Hero() {
                 alt={slide.alt}
                 fill
                 priority={index === 0}
-                className="object-cover"
+                className="object-cover object-center md:object-top"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40" />
             </div>
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center pt-[25%] sm:pt-[25%] md:pt-[15%]">
               <div className="max-w-3xl mx-auto text-center px-4">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
+                <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-bold text-gray-100 mb-6 sm:mb-8">
                   {slide.title}
-                </h2>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white mb-6 sm:mb-8 max-w-2xl mx-auto">
+                </h3>
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 mb-6 sm:mb-8 max-w-2xl mx-auto">
                   {slide.description}
                 </p>
                 <div className="flex justify-center gap-4">

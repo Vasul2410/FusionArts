@@ -1,4 +1,5 @@
 import Image from "next/image"
+import AIOF1 from "../public/art in life/rable_mid.png"
 
 export function ArtInLife() {
   return (
@@ -13,7 +14,7 @@ export function ArtInLife() {
         </div>
         <div className="relative w-48 h-48 flex-shrink-0">
           <Image
-            src={`https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20(1)-Ab0UfnGXCJs11FzufgJFAHox8o0Ytm.png`}
+            src={AIOF1}
             alt="Decorative statue"
             fill
             className="object-contain"

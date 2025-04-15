@@ -5,6 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation } from "swiper/modules"
 import "swiper/css/navigation"
 import "swiper/css";
+import about1 from "../../public/about/Untitled-1 [Recovered].jpg"
+import about2 from "../../public/about/about_us_2.jpg"
+
 
 export default function AboutPage() {
   const testimonials = [
@@ -32,8 +35,8 @@ export default function AboutPage() {
 
         {/* Hero Section */}
         <div className="relative h-[300px] sm:h-[400px] mb-16 rounded-lg overflow-hidden">
-          <Image src="/placeholder.svg" alt="Art Gallery Interior" fill className="object-cover" />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <Image src={about1} alt="Art Gallery Interior" fill className="object-cover" />
+          <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
             <p className="text-white text-2xl md:text-4xl font-serif text-center px-4">
               Bringing Art to Life Since 2010
             </p>
@@ -56,7 +59,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="md:w-1/2 relative h-[200px] sm:h-[300px] w-full">
-              <Image src="/placeholder.svg" alt="Gallery Founding" fill className="object-cover rounded-lg" />
+              <Image src={about2} alt="Gallery Founding" fill className="object-cover rounded-lg" />
             </div>
           </div>
         </section>
