@@ -3,16 +3,26 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 
+import ServiceA1 from "../public/services/IMG20241021000153.jpg"
+import ServiceA2 from "../public/services/IMG20250130225413.jpg"
+import ServiceA3 from "../public/services/IMG20210608035937.jpg"
+import ServiceA4 from "../public/services/IMG20250216005156.jpg"
+import ServiceA5 from "../public/services/InFrame_1705167790095.jpg"
+import ServiceA6 from "../public/services/IMGSERVICE6.jpeg"
+
+
+
 export function ArtWorks() {
   const [selectedImage, setSelectedImage] = useState(null)
 
   const artworks = [
-    { title: "Portrait Sketch", image: "/placeholder.svg" },
-    { title: "Character Sketch", image: "/placeholder.svg" },
-    { title: "Building Sketch", image: "/placeholder.svg" },
-    { title: "Couple Sketch", image: "/placeholder.svg" },
-    { title: "Interior Sketch", image: "/placeholder.svg" },
-    { title: "Perspective Sketch", image: "/placeholder.svg" },
+    { title: "Character Sketch", image: ServiceA2 },
+    { title: "Canvas Art", image: ServiceA5 },
+    { title: "Building Sketch", image: ServiceA3 },
+    { title: "Couple Sketch", image: ServiceA4 },
+    { title: "Acrylic Art", image: ServiceA6 },
+    { title: "Portrait Sketch", image: ServiceA1 },
+
   ]
 
   const handleImageClick = (index) => {

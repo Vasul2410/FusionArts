@@ -38,7 +38,7 @@ export default function AboutContent () {
           <Image src={about1} alt="Art Gallery Interior" fill className="object-cover" />
           <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
             <p className="text-white text-2xl md:text-4xl font-serif text-center px-4">
-              Bringing Art to Life Since 2010
+              Bringing Art to Life Since 2020
             </p>
           </div>
         </div>

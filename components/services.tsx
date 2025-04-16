@@ -1,9 +1,16 @@
+
+import Image from "next/image"
+import Service1 from "../public/main Services/IMG20231012164837.jpg"
+import Service2 from "../public/main Services/IMG20250207180152.jpg"
+import Service3 from "../public/main Services/IMGARCRYLIC.jpeg"
+import Service4 from "../public/main Services/IMG20210413191446.jpg"
+
 export function Services() {
   const services = [
-    { title: "Portrait Sketch", price: "Rs.700" },
-    { title: "Absence Sketch", price: "Rs.550" },
-    { title: "Couple Sketch", price: "Rs.550" },
-    { title: "Wall Sketch", price: "Rs.550" },
+    { title: "Portrait Sketch", price: "$119", image: Service1 },
+    { title: "Colour-Pencil Sketch", price: "$129", image: Service2 },
+    { title: "Canvas Art", price: "$159", image: Service3 },
+    { title: "Water-Colour Paint", price: "$159", image: Service4 },
   ]
 
   return (
@@ -14,10 +21,12 @@ export function Services() {
           {services.map((service) => (
             <div key={service.title} className="text-center">
               <div className="border border-gray-200 p-2 mb-4 aspect-[3/4] bg-white">
-                <div className="w-full h-full bg-gray-100" />
+                <div className="w-full h-full bg-gray-100 relative" >
+                <Image src={service.image} alt="Art Gallery Interior" fill className="object-cover object-center" />
+              </div>
               </div>
               <h3 className="font-serif mb-1">{service.title}</h3>
-              <p className="text-gray-600">{service.price}</p>
+              <p className="text-gray-600"> Starting From {service.price}</p>
             </div>
           ))}
         </div>
